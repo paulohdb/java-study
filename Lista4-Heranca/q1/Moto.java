@@ -15,7 +15,6 @@ public class Moto extends Veiculo {
     }
 
     public String toString() {
-
-        System.out.println("Veiculo de modelo " + modelo + " e cor " + cor);
+        return "Veiculo de modelo " + modelo + " e cor " + cor;
     }
 }

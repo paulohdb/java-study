@@ -16,7 +16,8 @@ public class Veiculo {
     }
 
     public String toString() {
-        System.out.println("Veiculo de modelo " + modelo); 
+
+        return "Veiculo de modelo " + modelo; 
     }
 
 }

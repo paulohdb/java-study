@@ -1,10 +1,10 @@
 public class Carro extends Veiculo {
 
-    super(modelo, peso, velocidade);
     int nCilindros;
 
     public Carro(String modelo, double peso, int nCilindros) {
 
+        super
         this.modelo = modelo;
         this.peso = peso;
         this.nCilindros = nCilindros;
@@ -15,6 +15,6 @@ public class Carro extends Veiculo {
     }
 
     public String toString() {
-        System.out.println("Carro de modelo " + modelo + " com " + nCilindros + " cilindros");
+        return "Carro de modelo " + modelo + " com " + nCilindros + " cilindros";
     }
 }

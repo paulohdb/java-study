@@ -20,5 +20,13 @@ public class Veiculo {
         return "Veiculo de modelo " + modelo; 
     }
 
-}
+    public double getVelocidade() {
+        return velocidade;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+    
+}   
 

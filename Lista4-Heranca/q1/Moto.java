@@ -17,4 +17,16 @@ public class Moto extends Veiculo {
     public String toString() {
         return "Veiculo de modelo " + modelo + " e cor " + cor;
     }
+
+    public double getVelocidade() {
+        return velocidade;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public double getComprimento() {
+        return comprimento;
+    }
 }

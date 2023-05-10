@@ -19,4 +19,17 @@ public class Gerente extends Funcionario {
         return "Gerente de nome " nome + ", salario " + sal + " e " + timeServ + " anos de experiencia";
     }
 
+    public String getCpf() {
+        return cpf;
+
+    public double getValHourWork() {
+        return valHourWork;
+    
+    public int getHourMonth() {
+        return hourMonth;
+    }
+
+    public int getBonus() {
+        return bonus;
+    }
 }

@@ -21,4 +21,17 @@ public class Funcionario {
     public String toString() {
         return "Funcionario de nome " + nome + " e salario " + sal;
     }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public double getValHourWork() {
+        return valHourWork;
+    }
+
+    public int getHourMonth() {
+        return hourMonth;
+    }
+
 }

@@ -4,7 +4,7 @@ public class Veiculo {
     double peso;
     double velocidade;
 
-    public Veiculo(String modelo, int nRodas, double peso) {
+    public Veiculo(String modelo, double peso, int nRodas) {
         this.modelo = modelo;
         this.nRodas = nRodas;
         this.peso = peso;

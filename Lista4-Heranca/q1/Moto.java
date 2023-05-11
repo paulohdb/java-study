@@ -4,7 +4,7 @@ public class Moto extends Veiculo {
 
     public Moto(String modelo, double peso, double comprimento, String cor) {
 
-        super(modelo, 2, peso);
+        super(modelo,peso, 2);
         this.comprimento = comprimento;
         this.cor = cor;
     }

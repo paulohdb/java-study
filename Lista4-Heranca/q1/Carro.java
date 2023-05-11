@@ -4,7 +4,7 @@ public class Carro extends Veiculo {
 
     public Carro(String modelo, double peso, int nCilindros) {
 
-        super(modelo, 4, peso);
+        super(modelo, peso, 4);
         this.nCilindros = nCilindros;
     }
 

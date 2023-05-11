@@ -3,33 +3,31 @@ public class Gerente extends Funcionario {
     int timeServ;
 
     Gerente(String nome, String cpf, double valHourWork, int hourMonth, double bonus, int timeServ) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.valHourWork = valHourWork;
-        this.hourMonth = hourMonth;
+        super(nome, cpf, valHourWork, hourMonth);
         this.bonus = bonus;
         this.timeServ = timeServ;
+        calculaSalario();
     }
 
     public void calculaSalario() {
-        super.sal = (super.valHourWork * super.hourMonth) + (bonus * timeServ);
+        salario = (valHourWork * hourMonth) + (bonus * timeServ);
     }
 
     public String toString() {
-        return "Gerente de nome " nome + ", salario " + sal + " e " + timeServ + " anos de experiencia";
+        return "Gerente de nome " + nome + ", salario " + salario + " e " + timeServ + " anos de serviço";
     }
 
     public String getCpf() {
         return cpf;
-
+    }
     public double getValHourWork() {
         return valHourWork;
-    
+    }
     public int getHourMonth() {
         return hourMonth;
     }
 
-    public int getBonus() {
+    public double getBonus() {
         return bonus;
     }
 }

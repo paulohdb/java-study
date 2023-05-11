@@ -2,7 +2,7 @@ public class Funcionario {
     
     String nome;
     String cpf;
-    double sal;
+    double salario;
     double valHourWork;
     int hourMonth;
 
@@ -15,11 +15,11 @@ public class Funcionario {
     }
 
     public void calculaSalario() {
-        sal = valHourWork * hourMonth;
+        salario = valHourWork * hourMonth;
     }
 
     public String toString() {
-        return "Funcionario de nome " + nome + " e salario " + sal;
+        return "Funcionario de nome " + nome + " e salario " + salario;
     }
 
     public String getCpf() {
@@ -35,3 +35,4 @@ public class Funcionario {
     }
 
 }
+

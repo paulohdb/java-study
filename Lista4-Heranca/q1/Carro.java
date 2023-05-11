@@ -4,14 +4,12 @@ public class Carro extends Veiculo {
 
     public Carro(String modelo, double peso, int nCilindros) {
 
-        super
-        this.modelo = modelo;
-        this.peso = peso;
+        super(modelo, 4, peso);
         this.nCilindros = nCilindros;
     }
 
     public void acelerar() {
-        velocidade = (peso / 2) + nCilindros;
+        velocidade += (peso / 2) + nCilindros;
     }
 
     public String toString() {

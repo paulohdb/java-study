@@ -4,18 +4,17 @@ public class Moto extends Veiculo {
 
     public Moto(String modelo, double peso, double comprimento, String cor) {
 
-        this.modelo = modelo;
-        this.peso = peso;
+        super(modelo, 2, peso);
         this.comprimento = comprimento;
         this.cor = cor;
     }
 
     public void acelerar() {
-        velocidade = (peso / 2) - comprimento;
+        velocidade += (peso / 2) - comprimento;
     }
 
     public String toString() {
-        return "Veiculo de modelo " + modelo + " e cor " + cor;
+        return "Moto de modelo " + modelo + " e cor " + cor;
     }
 
     public double getVelocidade() {

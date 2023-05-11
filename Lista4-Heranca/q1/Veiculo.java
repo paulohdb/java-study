@@ -4,11 +4,10 @@ public class Veiculo {
     double peso;
     double velocidade;
 
-    public Veiculo(String modelo, int nRodas, double peso, double velocidade) {
+    public Veiculo(String modelo, int nRodas, double peso) {
         this.modelo = modelo;
         this.nRodas = nRodas;
         this.peso = peso;
-        this.velocidade = velocidade;
     } 
 
     public void acelerar() {
@@ -29,4 +28,3 @@ public class Veiculo {
     }
     
 }   
-

@@ -2,7 +2,14 @@ public class Computador {
     int stor;
     int RAM;
     double cpuClock;
-    boolean resfActive;
+    boolean resfriamentoAtivo = false;
+
+    Computador(int stor, int RAM, double cpuClock, boolean resfriamentoAtivo) {
+        this.stor = stor;
+        this.RAM = RAM;
+        this.cpuClock = cpuClock;
+        this.resfriamentoAtivo = resfriamentoAtivo;
+    }
 
     public void setRam(int RAM) {
         this.RAM = RAM;
@@ -12,10 +19,4 @@ public class Computador {
         this.stor = stor;
     }
 
-    Computador(int stor, int RAM, double cpuClock, boolean resfActive) {
-        this.stor = stor;
-        this.RAM = RAM;
-        this.cpuClock = cpuClock;
-        this.resfActive = resfActive;
-    }
 }

@@ -4,10 +4,16 @@ public class Celular extends Computador {
     String model;
     int numApps;
 
-    Celular()
+    public Celular(int stor, int RAM, double cpuClock, double sizeScreen, String model, int numApps) {
+        super(stor, RAM, cpuClock, false);
+        this.sizeScreen = sizeScreen;
+        this.model = model;
+        this.numApps = numApps;
+
+    }
 
     public boolean instalaApp() {
-        if ((numApps * 2) < RAM) {
+        if ((numApps * 2) < stor) {
             numApps += 1;
             return true;
         }
